@@ -8,7 +8,7 @@ w <- ggplot(with_ai) +
                 y = Popularność, colour = Temat), 
             size = 1) +
   labs(title = 'A', x = "", 
-       subtitle = 'Temat „sztuczna inteligencja” był najbardziej popularnym wśród analizowanych') + 
+       subtitle = 'Temat „sztuczna inteligencja” był najbardziej popularny wśród analizowanych.') + 
   scale_colour_brewer(palette = "Set1", name = "Temat") +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y", minor_breaks = NULL) +
   theme(legend.position = "bottom", legend.direction = "horizontal", legend.box.just = "left")
@@ -18,7 +18,7 @@ n <- ggplot(no_ai) +
                 y = Popularność, colour = Temat), 
             size = 1) +
   labs(title = 'B', x = "",
-       subtitle = 'Pomijając „sztuczną inteligencję”, temat „big data” był od 2.2012 do 3.2017\nnajpopularniejszy. Później najpopularniejsze stało się „uczenie maszynowe”.\nŚrednio „data science” było najmniej popularnym tematem. Jednak od grudnia 2018\njego popularność przekracza popularność „big data”',
+       subtitle = 'Pomijając „sztuczną inteligencję”, temat „big data” był od lutego 2012 do marca 2017\nnajpopularniejszy. Później najpopularniejsze stało się „uczenie maszynowe”.\nŚrednio „data science” było najmniej popularnym tematem. Jednak od grudnia 2018\njego popularność przekracza popularność „big data”.',
        caption = 'Dane z Google Trends od 1.01.2008 do 30.09.2020, zakres geograficzny „Cały świat”') + 
   scale_colour_brewer(palette = "Set1") +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y", minor_breaks = NULL) +

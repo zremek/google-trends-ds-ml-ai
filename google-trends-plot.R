@@ -67,9 +67,9 @@ n <- ggplot(no_ai) +
   theme_minimal(base_family = "serif", base_size = 10) +
   guides(colour = "none")
 
-(p <- cowplot::plot_grid(w, n, nrow = 2))
-
-png("google-trends.png", width = 160, height = 190, units = "mm", res = 300)
-plot(p) # Rys. 1.
-dev.off()
+# (p <- cowplot::plot_grid(w, n, nrow = 2))
+# 
+# png("google-trends.png", width = 160, height = 190, units = "mm", res = 300)
+# plot(p) # Rys. 1.
+# dev.off()
 
